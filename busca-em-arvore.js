@@ -143,3 +143,16 @@ iasi.adicionarVizinho(vaslui, 92);
 iasi.adicionarVizinho(neamt, 87);
 
 neamt.adicionarVizinho(iasi, 87);
+
+// Imprimindo e executando a busca
+const origem = arad;
+const destino = bucharest;
+
+const melhorCaminho = busca_em_arvore(origem, destino);
+
+if (melhorCaminho !== null) {
+    console.log("Melhor caminho:", melhorCaminho.caminho);
+    console.log("Custo total:", melhorCaminho.custo);
+} else {
+    console.log("Não foi possível encontrar um caminho.");
+}
